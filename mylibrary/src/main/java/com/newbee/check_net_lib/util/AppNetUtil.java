@@ -159,11 +159,7 @@ public class AppNetUtil {
     public String getWifiSSid(Context context){
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-
-
-        String ssid = networkInfo.getExtraInfo();
-        Log.i("kankanshenmegui","fjsdlkfls;d"+ssid);
-        ssid="";
+        String ssid="";
         if(networkInfo != null && networkInfo.isConnected()) {
             if (networkInfo.getType() == ConnectivityManager.TYPE_WIFI) {
                 //ipc adhoc config
