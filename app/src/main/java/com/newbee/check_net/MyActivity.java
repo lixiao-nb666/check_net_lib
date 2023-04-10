@@ -32,6 +32,10 @@ public class MyActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        netWorkChangeReceiverUtil.close(this);
+        if(null!=netWorkChangeReceiverUtil){
+            netWorkChangeReceiverUtil.close(this);
+            netWorkChangeReceiverUtil=null;
+        }
+
     }
 }
