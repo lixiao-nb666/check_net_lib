@@ -17,8 +17,8 @@ public class NetWorkChangeReceiverUtil {
 
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
-        intentFilter.addAction("android.net.wifi.WIFI_STATE_CHANGED");
-        intentFilter.addAction("android.net.wifi.STATE_CHANGE");
+//        intentFilter.addAction("android.net.wifi.WIFI_STATE_CHANGED");
+//        intentFilter.addAction("android.net.wifi.STATE_CHANGE");
         context.registerReceiver(receiver, intentFilter);
 
     }
